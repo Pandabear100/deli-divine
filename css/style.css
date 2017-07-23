@@ -1,0 +1,375 @@
+@font-face {
+  	font-family: 'Raleway';
+  	src: url('../font/Raleway-Light.ttf') format('truetype');
+  	font-weight : normal;
+}
+
+@font-face {
+  	font-family: 'Raleway';
+  	src: url('../font/Raleway-Regular.ttf') format('truetype');
+  	font-weight : normal;
+}
+
+@font-face {
+  	font-family: 'Raleway';
+  	src: url('../font/Raleway-Bold.ttf') format('truetype');
+  	font-weight : bold;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	vertical-align: top;
+}
+
+
+/*__________________ HELPER CLASSES ___________________*/
+
+.width {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*____________________________________*/
+
+
+h1 {
+	font-size: 2em;
+	margin-bottom: 0.3em;
+	line-height: 1em;
+}
+
+h2 {
+
+	font-weight: 300;
+	font-size: 1em;
+}
+
+h3 {
+	font-weight: 700;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	margin-bottom: 1em;
+}
+
+h4 {
+	font-weight: 0.7em;
+}
+
+hr {
+	width: 4em;
+	margin: 2em auto;
+	border-style: solid;
+}
+
+li {
+	list-style: none;
+}
+
+p {
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.5em;
+}
+
+a {
+	text-decoration: none;
+	color: #79c23a;
+}
+
+/*__________________ HEADER ___________________*/
+
+
+header {
+	width: 100%;
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	padding: 5em;
+	color: white;
+}
+
+header img {
+	width: 25%;
+	max-width: 13em;
+}
+
+header .num_inline {
+	display: inline-block;
+	margin: 0 1em 0.5em 0;
+	cursor: pointer;
+}
+
+header a {
+	color: white;
+	font-size: 1.5em;
+}
+
+.st0 {
+	fill: white;
+}
+
+.st0:hover {
+	fill: #79c23a;
+}
+
+#facebook {
+	width: 2em;
+}
+
+/*__________________ NAVIGATION ___________________*/
+
+
+nav {
+	position: relative;
+	width: 100%;
+	background-color: white;
+	text-align: center;
+	padding: 2em;
+	text-transform: uppercase;
+	font-size: 0.9em;
+	z-index: 10;
+	opacity: 0.9;
+}
+
+nav .navigation {
+	display: -webkit-inline-flex; /* Safari */
+	display: inline-flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+nav li {
+	color: #000;
+	transition: 0.2s;
+	margin: 0 2em;
+	cursor: pointer;
+}
+
+nav li:active {
+	color: #79c23a;
+}
+
+.current_link {
+	color: #79c23a;
+}
+
+/*** Mobile Navigation ***/
+
+.mobile_nav {
+	display: none;
+	position: relative;
+	width: 100%;
+	top: 0;
+	background: none;
+	background-color: white;
+	line-height: 4.063em;
+	z-index:10;
+	height: 3.750em;
+}
+
+.hamburger {
+  position:absolute;
+  top:0;
+  left:1em;
+  color:#000;
+  border:0;
+  font-size:1em;
+  font-weight:300;
+  cursor:pointer;
+  outline:none;
+  z-index:10;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.hamburger:hover {
+	color: #79c23a;
+}
+
+.menu{
+	display: none;
+	z-index:10; 
+	font-weight:bold; 
+	font-size:0.8em; 
+	width:100%; 
+	background:#131313;  
+	position:absolute;
+	left: 0; 
+	top: 4.8em;
+	text-align:center;
+}
+
+.menu li {
+	display: block; 
+	border-bottom:#1d1f20 1px solid;
+	color: #fff;
+}
+
+.menu li:hover {
+	display: block;    
+	background:#181818; 
+	border-bottom:#1d1f20 1px solid;
+}
+
+.menu ul li a { 
+	text-decoration: none;  
+	margin: 0px; 
+	color:#fff;
+}
+
+.menu ul li a:hover {  
+	color: #79c23a; 
+	text-decoration:none;
+}
+
+.menu a {
+	text-decoration:none; 
+	color:white;
+}
+
+.menu a:hover {
+	text-decoration:none; 
+	color:white;
+}
+
+.show {
+	display: block;
+}
+
+
+/*__________________ IMAGES ___________________*/
+
+section {
+	display: -webkit-inline-flex; /* Safari */
+	display: inline-flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+section .images {
+	position: relative;
+	min-width: 0;
+	height: auto;
+}
+
+section .images img {
+	width:100%;
+}
+
+section .hover_style {
+	position: absolute;
+	width: 100%;
+	height: 100.05%;
+	top: 0;
+	left: 0;
+	color: white;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.7);
+	padding: 1.5em;
+	transition: 0.7s;
+}
+
+section .img_hover1, .img_hover2, .img_hover3, .img_hover4 {
+	opacity: 0;
+}
+
+section .text {
+    position: absolute;
+	left: 10%;
+	right: 10%;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+
+#pointer {
+	position: relative;
+	width: 2em;
+	top: -1px;
+}
+
+.about_quote:hover .img_hover1 {opacity: 1;}
+.cheese_quote:hover .img_hover2 {opacity: 1;}
+.platter_quote:hover .img_hover3 {opacity: 1;}
+.contact_quote:hover .img_hover4 {opacity: 1;}
+
+/*__________________ MAIN CONTENT ___________________*/
+
+main .content_container {
+	position: relative;
+	padding: 2em 0;
+	display: none;
+}
+
+main .main_visible {
+	display: block;
+}
+
+main .content_container p {
+	padding-bottom: 1em;
+}
+
+main .content_container .content {
+	width: 50%;
+	display: inline-block;
+	padding-right: 5em;
+	border-right: 1px solid lightGrey;
+}
+
+main .content_container .content_image {
+	padding-left: 5.5em;
+	display: inline-block;
+	width: 50%;
+}
+
+main .content_container .content_image img {
+	width: 100%;
+}
+
+/*__________________ FOOTER ___________________*/
+
+footer {
+	background-color: #000;
+	margin-top: 2em;
+}
+
+.footer_content {
+	position: static;
+	bottom: 0;
+	color: white;
+	padding: 1em 0;
+}
+
+.footer_content p {
+	display: inline-block;
+	font-size: 0.5em;
+}
+
+.footer_content h2 {
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
